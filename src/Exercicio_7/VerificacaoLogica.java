@@ -21,7 +21,6 @@ public class VerificacaoLogica {
         } else {
             System.out.println("Os valores são diferentes, um valor é VERDADEIRO e o outro é FALSO");
         }
-
         sc.close();
 
     }
