@@ -2,7 +2,7 @@ package Exercicio_3;
 
 import java.util.Scanner;
 
-public class VerificacaoNumero_2 {
+public class Calculo_1 {
 
     public static void main(String[] args) {
 
