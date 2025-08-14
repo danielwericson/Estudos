@@ -8,37 +8,37 @@ public class CalculoIdade {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Digite uma dia de nascimento: ");
-        int dia = sc.nextInt();
-        System.out.print("Digite uma mes de nascimento: ");
-        int mes = sc.nextInt();
+        int diaNascimento = sc.nextInt();
+        System.out.print("Digite uma mesNascimento de nascimento: ");
+        int mesNascimento = sc.nextInt();
         System.out.print("Digite uma ano de nascimento: ");
-        int ano = sc.nextInt();
+        int anoNascimento = sc.nextInt();
 
-        int anosVividos = 2025;
-        int mesesVividos = 8;
-        int diasVividos = 14;
+        int anosAtual = 2025;
+        int mesesAtual = 8;
+        int diasAtual = 14;
 
-        if (dia > 14){
-            diasVividos = 30 + 14 - (dia - 1);
+        if (diaNascimento > 14){
+            diasAtual = 30 + 14 - (diaNascimento - 1);
         } else {
-            diasVividos = 14 - dia;
+            diasAtual = 14 - diaNascimento;
         }
 
-        if (mes > 8){
-            mesesVividos = 12 + 8 - (mes + 1);
+        if (mesNascimento > 8){
+            mesesAtual = 12 + 8 - (mesNascimento + 1);
         } else {
-            mesesVividos = 8 - mes;
+            mesesAtual = 8 - mesNascimento;
         }
 
-        if (ano > 2000) {
-            anosVividos = 2025 - (ano + 1);
+        if (anoNascimento > 2000) {
+            anosAtual = 2025 - (anoNascimento + 1);
         } else {
-            anosVividos = 2025 - ano;
+            anosAtual = 2025 - anoNascimento;
         }
 
         System.out.println();
-        System.out.println("Data de nascimento: " + dia + "/" + mes + "/" + ano);
-        System.out.println(anosVividos + " anos, " + mesesVividos + " meses, " + diasVividos + " dias de vida.");
+        System.out.println("Data de nascimento: " + diaNascimento + "/" + mesNascimento + "/" + anoNascimento);
+        System.out.println(anosAtual + " anos, " + mesesAtual + " meses, " + diasAtual + " dias de vida.");
 
         sc.close();
     }
