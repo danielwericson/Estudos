@@ -1,7 +1,5 @@
 package Exercicio_19;
 
-
-
 public class Tabuada {
     public static void main(String[] args) {
 
@@ -56,7 +54,6 @@ public class Tabuada {
             System.out.println(10 + "x" + (i) + " = " + (i * 10));
         }
         System.out.println();
-
 
     }
 }
